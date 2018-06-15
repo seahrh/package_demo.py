@@ -1,5 +1,5 @@
 from package1 import *
-from package1 import package2
+from package1 import package2, _package3
 
 # Following imports work but trigger a warning:
 # class/function is not declared in __all__
@@ -15,6 +15,7 @@ bar_package2()
 
 package2.tin_package2()
 package2._foo_package2()
+_package3._foo_package3()
 
 # Following is not exported in API
 # c = NonExportedClassModule1()
@@ -37,6 +38,7 @@ assert __dir == [
     '__path__',
     '__spec__',
     '_foo_package1',
+    '_package3',
     'bar_module2',
     'bar_module4',
     'bar_package1',
