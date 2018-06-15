@@ -6,4 +6,4 @@ def _foo_module2():
 
 
 def bar_module2():
-    return 'bar_module2'
+    return 'bar'

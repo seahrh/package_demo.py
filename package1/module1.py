@@ -1,12 +1,11 @@
-__all__ = ['Projectile']
+__all__ = ['ExportedClassModule1']
 
 
-class Projectile(object):
-    def __init__(self, mass, velocity):
-        self.mass = mass
-        self.velocity = velocity
+class ExportedClassModule1(object):
+    def __init__(self):
+        pass
 
 
-class NonExportedClass(object):
+class NonExportedClassModule1(object):
     def __init__(self):
         pass

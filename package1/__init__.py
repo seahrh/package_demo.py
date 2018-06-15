@@ -1,8 +1,10 @@
 from . module1 import *
 from . module2 import *
+from . package2 import *
 __all__ = []
 __all__ += module1.__all__
 __all__ += module2.__all__
+__all__ += package2.__all__
 
 
 def bar_package1():
