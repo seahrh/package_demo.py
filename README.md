@@ -5,6 +5,10 @@
 `__all__` is not worth it because Python does not enforce private packages and modules.
 Any module or subpackage can be imported, breaking encapsulation.
 
+Leaky Abstraction
+
+![leaky]
+
 ## What are packages?
 
 In Python, packages are modules that contain other modules.
@@ -92,3 +96,5 @@ Tested on Python 3.6.5.
 Stable APIs
 2. python.org - The Python Tutorial: [Modules](https://docs.python.org/3/tutorial/modules.html)
 3. PEP8 - [Public and Internal Interfaces](https://www.python.org/dev/peps/pep-0008/#public-and-internal-interfaces)
+
+[leaky]: https://media.giphy.com/media/3orifdpsBHcnNW70B2/giphy.gif
