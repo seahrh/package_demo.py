@@ -2,8 +2,10 @@
 
 ## TL;DR
 
-`__all__` is not worth it because Python does not enforce private packages.
+`__all__` is probably not worth it because Python does not enforce private packages.
 So subpackages can always be imported, breaking encapsulation.
+
+Consider `__all__` if you do not need subpackages, and rely only on modules to organise your code.
 
 ## What are packages?
 
