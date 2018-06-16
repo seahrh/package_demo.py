@@ -2,10 +2,10 @@
 
 ## TL;DR
 
-`__all__` is not worth it because Python does not enforce private packages and modules.
-Any module or subpackage can be imported, breaking encapsulation.
+`__all__` helps to indicate the public interface of your API.
 
-Leaky Abstraction
+Beware `__all__` is a [leaky abstraction](https://en.wikipedia.org/wiki/Leaky_abstraction) because Python does not enforce private packages and modules.
+Any module or subpackage can be imported, breaking encapsulation.
 
 ![leaky]
 
@@ -19,8 +19,8 @@ Key benefit: Encapsulation
 
 To provide public parts of the API as a set of attributes that are
 **available on the top-level package**.
-This will allow API users to import directly from the top-level package instead of the subpackage.
-This ensures that users' code will continue to work
+Users can import directly from the top-level package instead of the subpackage.
+This ensures that users' code continues to work
 even if the internal organization of the API changes.
 
 ## How to export API
